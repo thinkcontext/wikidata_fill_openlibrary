@@ -1,0 +1,6 @@
+Populates missing Open Library Author Ids (P648) by inferring them from book information
+ as follows:
+
+   - run sparql query to find authors lacking OL ids but with books with isbns
+   - lookup isbn in Open Library via their api
+   - if the book author's name matches add the OL id to author's Wikidata
