@@ -33,7 +33,6 @@ WHERE
    filter (!bound(?ol))  #filter those that have no OL author id
 }
 order by desc(?author)
-limit 100
 """
 
 ol_prop = 'P648'
