@@ -54,7 +54,7 @@ def canon_name(name):
     if name.count(',') == 1:
         (a,b) = re.split(',',name)
         name = b + ' ' + a
-    return re.sub('[\s\'\-\.\,]','',name.lower().strip())
+    return re.sub('[\s\'\-\.\,\"\(\)]','',name.lower().strip())
 
 def ol_api(kind,val):
     h = httplib2.Http()
